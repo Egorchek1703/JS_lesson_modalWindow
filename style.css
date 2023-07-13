@@ -1,0 +1,52 @@
+/* mo */
+.modal-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, .1);
+    transition: all ease-out 1s;
+}
+.modal-overlay.show-modal-overlay{
+    background: rgba(0, 0, 0, .5);
+    opacity: 1;
+}
+/* mw */
+.modal-window{
+    width: 40vw;
+    height: 25vh;
+    background: white;
+    position: absolute;
+    top: 20vh;
+    left: 20vw;
+    border-radius: 30px;
+    transform: translateY(-100vh);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 60px;
+    z-index: 2;
+    transition: all ease-out 1s;
+}
+.modal-window.show-modal-window{
+    transform: translateY(0) !important;
+}
+/*  */
+span{
+    font-size: 28px;
+}
+.close-mw{
+    cursor: pointer;
+}
+.close-mw:hover{
+    color: red;
+}
+.open-mw{
+    cursor: pointer;
+}
+p{
+    text-align: center;
+}
